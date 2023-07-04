@@ -20,7 +20,7 @@ module.exports = function (roles) {
         }
       }
       if (!hasRole) {
-        return res.status(403).json({ message: "Permisson denied" });
+        return res.status(403).json({ message: "Permission denied" });
       }
       next();
     } catch (err) {
